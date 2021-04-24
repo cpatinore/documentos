@@ -1,0 +1,25 @@
+{% extens 'index.html' %}
+
+{% block content %}
+<br>
+<h1 style="font-size: 30px">Datos para crear archivo</h1>
+
+<form action="/crear/" method="GET">
+    <div class="form-row">
+        <div class="form-group col-auto">
+            <label for="exampleDataList" class="form-label">Tipo</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escoja la opcion">
+            <datalist id="datalistOptions">
+                <option value="Carpeta">
+                <option value="Archivo">
+            </datalist>
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="text" class="form-control" name="creado" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Crear</button>
+    </div>
+</form>
+
+<br>
+<h1>{{ mensaje }}</h1>
+{% endblock %}
