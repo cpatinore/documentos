@@ -1,4 +1,4 @@
-{% extens 'index.html' %}
+{% extends 'index.html' %}
 
 {% block content %}
 <br>
@@ -9,14 +9,14 @@
         <div class="form-group col-auto">
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
-                <select class="form-select" id="inputGroupSelect01">
+                <select name="tipo" class="form-select" id="inputGroupSelect01">
                   <option selected>Choose...</option>
                   <option value="carpeta">Carpeta</option>
                   <option value="archivo">Archivo</option>
                 </select>
               </div>
             <label for="exampleInputEmail1">Nombre</label>
-            <input type="text"  value="name"  class="form-control" name="creado" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text"  value="name"  class="form-control" name="nombre" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <button type="submit" class="btn btn-primary">Crear</button>
     </div>
